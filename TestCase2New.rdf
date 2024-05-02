@@ -1,0 +1,1170 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2/"
+     xml:base="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:TestCase2="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#depictsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#depictsTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isDepictedFrom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#derivesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#derivesTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isDerivedFrom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasConditionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasConditionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Condition_Types"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasDisplayType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasDisplayType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Display_Types"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasFunctionType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasFunctionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasSource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#hasSource">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isSourceOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Sources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isDepictedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isDepictedFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isDerivedFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isSourceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#isSourceOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Condition_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Condition_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Display_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Display_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Sources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Sources"/>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Requirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Values -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Values"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Artifact"/>
+        <TestCase2:isDepictedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI1"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI10"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI11"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI7"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI9"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI11"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI12"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI13"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI14"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#PrototypeMeeting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI2"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI7"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI8"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Customer_Requirement"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview"/>
+        <TestCase2:hasSource rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Interview">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#2DMap"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#3DMap"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#satelliteView"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#satelliteView"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#3DMap"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI10"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#2DMap"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI10"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#login"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI11"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#satelliteView"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#dashboard"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#tutorial"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#dashboard"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#tutorial"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#userManual"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#dashboard"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#userManual"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#tutorial"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI2"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#satelliteView"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI2"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI7"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#antennaView"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL_Requirement"/>
+        <TestCase2:hasConditionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#2DMap"/>
+        <TestCase2:hasFunctionType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#3DMap"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#PrototypeMeeting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#PrototypeMeeting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#RDD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A1"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL1"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL2"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL3"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A8"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL14"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL15"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A9"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL16"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A10"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL16"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A11"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL17"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A12"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL14"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL15"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A13"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL18"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL19"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL20"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL21"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR17"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR18"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A14"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL18"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL19"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL20"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL21"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR17"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR18"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL4"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL5"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL6"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A2"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL10"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL4"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL7"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL8"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL9"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR2"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR3"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A3"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL10"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL11"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL12"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL4"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL7"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL8"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL9"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR2"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR3"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A4"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL13"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL7"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL8"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR13"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR14"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR5"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A5"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL13"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL7"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL8"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR13"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR14"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR5"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A6"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL5"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:depictsTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#A7"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL5"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#UI_Requirement"/>
+        <TestCase2:derivesTo rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#LL4"/>
+        <TestCase2:hasDisplayType rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile"/>
+        <TestCase2:isDerivedFrom rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#CR11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#addSatellite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#antennaView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#antennaView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#automatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Condition_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#dashboard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#dashboard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#desktop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Display_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#login -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#login">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#manual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Condition_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#mobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Display_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#priorityView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#satelliteView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#satelliteView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#tutorial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#tutorial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#userManual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#userManual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#2DMap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#2DMap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#3DMap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#3DMap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/owner/ontologies/2024/3/TestCase2#Function_Types"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
